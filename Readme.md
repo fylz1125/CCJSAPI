@@ -19,3 +19,22 @@ spriteFrameCache.addSpriteFrames(res.s_heros_plist);
 var frame = spriteFrameCache.getSpriteFrame("216.png");
 this.sprite = new cc.Sprite(frame);
 ```
+
+## 自定义TTF字体
+- 在 `resource.js` 文件中声明字体路径
+- 使用字体文件名称加载
+
+```js
+// 字体
+var g_fonts = [
+    {
+        type:"font",
+        name:"FZYHJW",
+        srcs:["res/fonts/FZYHJW.ttf"]
+    },
+];
+```
+```js
+// 使用字体
+var label = new cc.LabelTTF("全民水浒 林冲传", "FZYHJW", 80);
+``
